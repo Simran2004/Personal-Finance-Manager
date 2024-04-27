@@ -1,0 +1,117 @@
+
+/* New Section!!! */
+.operations {
+    margin-top: 5rem;
+    border-top: 1px solid rgb(200, 200, 200);
+   /* background-color: rgb(240, 240, 240);*/
+   --bkg: 190 60% 98%;
+    /* height: 40rem; */
+    margin-bottom: 10rem;
+  }
+  
+  .operationsContainer {
+    padding-top: 7rem;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .operationHeading {
+    color: #8268a2;
+    font-size: 1.2rem;
+  }
+  .operationsPara {
+    font-size: 2rem;
+    width: 80%;
+    margin-top: 1.2rem;
+    color: rgb(70, 70, 70);
+    font-weight: 500;
+  }
+  
+  .operationsFeatures {
+    background-color: rgb(240, 240, 240);
+    margin-top: 5rem;
+    max-width: 100rem;
+  }
+  
+  .featuresButtons {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+  }
+  .btn {
+    margin-right: 2rem;
+    padding: 0.8rem 4rem;
+    font-weight: 600;
+    border-radius: 1rem;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    background-color: #967bb6;
+    transform: translateY(-50%);
+    transition: all 0.4s linear;
+  }
+  .activebtn {
+    transition: all 0.4s linear;
+    transform: translateY(-70%);
+    background-color: #8268a2;
+  }
+  
+  .btndesc {
+    background-color: rgb(240, 240, 240);
+    padding: 0 4rem;
+  }
+  .btnHeading {
+    width: 80%;
+    /* text-align: center; */
+    margin: 0 auto;
+    margin-top: 2rem;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    color: rgb(30, 30, 30);
+    background-color: rgb(240, 240, 240);
+    font-weight: 500;
+  }
+  .btnPara {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    letter-spacing: 1.5px;
+    background-color: rgb(240, 240, 240);
+    padding-bottom: 4rem;
+    font-size: 1.2rem;
+    color: rgb(70, 70, 70);
+  }
+  
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .operationsContainer {
+      max-width: 90%; /* More width on smaller screens */
+  }
+
+  .operationsPara, .btnHeading, .btnPara {
+      width: 100%; /* Use full container width */
+  }
+
+  .btn {
+      padding: 0.6rem 2rem; /* Smaller padding */
+      font-size: 0.9rem; /* Smaller font size */
+      margin-right: 1rem; /* Less margin */
+      flex-grow: 1; /* Make buttons take up equal space */
+      text-align: center; /* Ensure text is centered */
+  }
+
+  .btndesc {
+      padding: 0 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+      padding: 0.5rem 1rem; /* Even smaller padding */
+      font-size: 0.8rem; /* Even smaller font size */
+  }
+
+  .operationsPara, .btnHeading, .btnPara {
+      font-size: 90%; /* Smaller text on very small screens */
+  }
+}
