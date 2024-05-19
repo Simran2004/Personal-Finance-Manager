@@ -114,6 +114,18 @@ const Dashboard = () => {
               {
                 expenses && expenses.length > 0 && (
                   <div className="grid-md">
+
+                      <h2>Budget Pie Charts</h2>
+                    <div className="pie-charts">
+                      {budgets.map((budget) => (
+                        <PieChart
+                          key={budget.id}
+                          budget={budget}
+                          expenses={expenses}
+                        />
+                      ))}
+                    </div>
+                      
                     <h2>Recent Expenses</h2>
                     <Table expenses={expenses.sort((a, b) => b.createdAt - a.createdAt)} />
                   </div>
