@@ -620,8 +620,6 @@ table a {
   transition: transform 0.2s;
 }
 
-<<<<<<< HEAD
-=======
 /* styles.css */
 .pie-chart-container {
   margin: 20px 0;
@@ -633,32 +631,10 @@ table a {
   transition: transform 0.2s;
 }
 
->>>>>>> 13aa539a5ca8a308011995bc345371d52a4f7238
 .pie-chart-container:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-<<<<<<< HEAD
-=======
-
-.pie-charts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.pie-chart canvas {
-  width: 100% !important;
-  max-width: 400px;
-}
-
-.pie-chart-container h3 {
-  color: #333;
-  margin-bottom: 10px;
-}
-
->>>>>>> 13aa539a5ca8a308011995bc345371d52a4f7238
 
 .pie-charts {
   display: flex;
