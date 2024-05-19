@@ -18,7 +18,11 @@ import AddBudgetForm from "../components/AddBudgetForm.jsx";
 import AddExpenseForm from "../components/AddExpenseForm.jsx";
 import BudgetItem from "../components/BudgetItem.jsx";
 import Table from "../components/Table.jsx";
+<<<<<<< HEAD
 import PieChart from "../components/PieChart.jsx"; // Import the PieChart component
+=======
+import PieChart from "../components/PieChart.jsx";
+>>>>>>> 13aa539a5ca8a308011995bc345371d52a4f7238
 
 //loader function
 export function dashboardLoader() {
@@ -109,8 +113,12 @@ const Dashboard = () => {
                 {expenses && expenses.length > 0 && (
                   <div className="grid-md">
 
+<<<<<<< HEAD
                     
                     <h2>Budget Pie Charts</h2>
+=======
+                      <h2>Budget Pie Charts</h2>
+>>>>>>> 13aa539a5ca8a308011995bc345371d52a4f7238
                     <div className="pie-charts">
                       {budgets.map((budget) => (
                         <PieChart
@@ -120,7 +128,11 @@ const Dashboard = () => {
                         />
                       ))}
                     </div>
+<<<<<<< HEAD
 
+=======
+                      
+>>>>>>> 13aa539a5ca8a308011995bc345371d52a4f7238
                     <h2>Recent Expenses</h2>
                     <Table
                       expenses={expenses.sort(
