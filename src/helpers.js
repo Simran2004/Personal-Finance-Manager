@@ -2,13 +2,12 @@
 export const wait=() => new Promise(res=>setTimeout(res,Math.random()*800));
 
 //colors
+
 const generateRandomColor = () =>
 {
     const existingBudgetLength= fetchData("budgets")?.length??0;
     return `${existingBudgetLength*34}65% 50%`;
 }
-
-
 
 //  Local Storage
 //fetches any data given a key in my local storage and return it to me.
@@ -89,6 +88,7 @@ export const calculateSpentByBudget = (budgetId) => {
     return budgetSpent;
   }
 
+
 // FORMATTING
 export const formatDateToLocaleString = (epoch) => new Date(epoch).toLocaleDateString();
 
@@ -107,3 +107,4 @@ export const formatPercentage = (amt) => {
       currency: "INR",
     });
   };
+
