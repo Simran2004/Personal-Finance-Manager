@@ -608,19 +608,8 @@ table a {
   font-size: var(--fs-300);
 }
 
-
 /* styles.css */
-.pie-chart-container {
-  margin: 20px 0;
-  text-align: center;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
-}
-
-/* styles.css */
+/*
 .pie-chart-container {
   margin: 20px 0;
   text-align: center;
@@ -652,3 +641,4 @@ table a {
   color: #333;
   margin-bottom: 10px;
 }
+*/
