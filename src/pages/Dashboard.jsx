@@ -11,7 +11,7 @@ import AddBudgetForm from "../components/AddBudgetForm.jsx";
 import AddExpenseForm from "../components/AddExpenseForm.jsx";
 import BudgetItem from "../components/BudgetItem.jsx";
 import Table from "../components/Table.jsx";
-import PieChart from "../components/PiChart.jsx";
+import PieChart from "../components/PieChart.jsx";
 
 //loader function
 export function dashboardLoader()
