@@ -11,9 +11,12 @@ const generateRandomColor = () =>
 
 //  Local Storage
 //fetches any data given a key in my local storage and return it to me.
+
 export const fetchData=(key)=>{
     return JSON.parse(localStorage.getItem(key));
 };
+
+
 
 // Get all items from local storage
 export const getAllMatchingItems = ({ category, key, value }) => {

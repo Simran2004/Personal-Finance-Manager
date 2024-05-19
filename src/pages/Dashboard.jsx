@@ -25,7 +25,7 @@ export function dashboardLoader() {
   const userName = fetchData("userName");
   const budgets = fetchData("budgets");
   const expenses = fetchData("expenses");
-  return { userName, budgets, expenses };
+  return { userName, budgets: budgets ?? [], expenses: expenses??[] };
 }
 
 //action
@@ -83,7 +83,7 @@ export async function dashboardAction({ request }) {
 }
 
 const Dashboard = () => {
-  const { userName, budgets, expenses } = useLoaderData();
+  const { userName, budgets, expenses} = useLoaderData();
 
   return (
     <>
