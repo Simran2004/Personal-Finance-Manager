@@ -539,12 +539,15 @@ progress[value]::-webkit-progress-bar {
 progress[value]::-moz-progress-bar {
   -moz-transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
- /* background-color: hsl(var(--backdrop));*/
-  background-color: rgba(225, 39, 39, 0.8);
+  background-color: hsl(var(--backdrop));
+  /*background-color: rgba(225, 39, 39, 0.8);*/
 }
 
 progress[value]::-webkit-progress-value {
-   background-color: hsl(var(--backdrop));
+   background-color: rgba(225, 39, 39, 0.8);
+  
+  /* background-color: hsl(var(--backdrop));*/
+  
   -webkit-transition: all 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
