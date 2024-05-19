@@ -610,6 +610,39 @@ table a {
 
 
 
+/* styles.css */
+.pie-chart-container {
+  margin: 20px 0;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.pie-chart-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.pie-charts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.pie-chart canvas {
+  width: 100% !important;
+  max-width: 400px;
+}
+
+.pie-chart-container h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
 
 
 
