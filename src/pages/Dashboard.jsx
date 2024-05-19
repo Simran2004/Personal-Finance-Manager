@@ -18,7 +18,7 @@ import AddBudgetForm from "../components/AddBudgetForm.jsx";
 import AddExpenseForm from "../components/AddExpenseForm.jsx";
 import BudgetItem from "../components/BudgetItem.jsx";
 import Table from "../components/Table.jsx";
-/*import PieChart from "../components/PieChart.jsx"; // Import the PieChart component*/
+import PieChart from "../components/PieChart.jsx"; // Import the PieChart component
 
 //loader function
 export function dashboardLoader() {
@@ -105,6 +105,18 @@ const Dashboard = () => {
                     <BudgetItem key={budget.id} budget={budget} />
                   ))}
                 </div>
+
+                <h2>Budget Pie Charts</h2>
+<div className="pie-charts">
+  {budgets.map((budget, index) => (
+    <PieChart
+      key={budget.id}
+      budget={budget}
+      expenses={expenses}
+      index={index} // Pass the index here
+    />
+  ))}
+</div>
 
                 {expenses && expenses.length > 0 && (
                   <div className="grid-md">
